@@ -1,0 +1,6 @@
+@import "./mixins/burger";
+
+@mixin border($color: var(--color-white)) {
+    border: solid 1px $color;
+    border-radius: 4px;
+  }

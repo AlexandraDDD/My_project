@@ -1,0 +1,37 @@
+
+.heading{
+    height: 93vh;
+    color: var(--color-white);
+   
+    background:
+    linear-gradient(270deg, #ffffff00, #2d253fd8), 
+     url(/src/img/main-page/main-bg.jpg)
+    ;
+    background-size: cover;
+   &__inner{
+    max-width: 500px;
+    
+
+   }
+   &__title{
+    font-size: 50px;
+    margin-bottom: 20px;
+
+   }
+   &__subtitle{
+   font:  var(--middle-par);
+    margin-bottom: 20px;
+
+   }
+   &__wrapper{
+    padding-top: 30vh;
+    display: flex;
+    justify-content: space-between;
+
+   }
+   &__wheather{
+    /* position: absolute;
+    right: 0; */
+   }
+
+}

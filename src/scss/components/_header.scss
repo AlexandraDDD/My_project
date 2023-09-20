@@ -1,0 +1,93 @@
+header{
+   
+    background-color: var(--color-blue);
+
+}
+.nav{
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+   &__item{
+    margin-right: 50px;
+    color: var(--color-white)
+
+   }
+   &__link{
+   
+    font: 400 16px / 140% var(--font-family);
+
+   }
+   &__main-link{
+    color: var(--color-white);
+    font: var(--logo);
+
+   }
+   &__box{
+    display: flex;
+    align-items: center;
+
+   }
+   &__login{
+    padding: 4px 10px;
+    @include border(var(--color-white));
+
+   }
+   &__course{
+    padding: 4px 10px;
+    @include border(var(--color-white));
+
+   }
+}
+
+.menu{
+    display: none;
+    
+    
+    position: absolute;
+    left: 0;
+    -webkit-box-shadow: 0px 0px 30px 5px rgba(34, 60, 80, 0.2);
+-moz-box-shadow: 0px 0px 30px 5px rgba(25, 46, 62, 0.2);
+box-shadow: 0px 0px 30px 5px rgba(20, 38, 52, 0.212);
+    
+   
+    width: 100%;
+    background-color: var(--color-white);
+
+    &__wrapper{
+        max-width: 1270px;
+        margin: 0 auto;
+       
+        
+    }
+    &__list-box{
+       display: flex;
+       
+        
+    }
+    &__title{
+        color: var(--color-blue);
+        font: var(--middle-font-bold);
+        margin-bottom: 15px;
+        
+    }
+    &__item{
+        margin-right: 15px;
+
+        max-width: 260px;
+        text-align: center;
+        padding: 7px 18px;
+        @include border(var(--color-blue));
+        border-radius: 18px;
+        
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+}
+.menu--active{
+    display: block;
+
+
+}
